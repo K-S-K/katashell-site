@@ -1,0 +1,94 @@
+================================================================
+SHOW HN SUBMISSION — Kata Shell
+================================================================
+
+HOW HN WORKS (no HTML, no Markdown):
+- A "Show HN" is submitted at https://news.ycombinator.com/submit
+  as a TITLE + URL only. The URL is your product page.
+- You then immediately post the story as the FIRST COMMENT on your
+  own submission. That comment is plain text:
+    * paragraphs separated by blank lines
+    * *asterisks* for italics (use sparingly or not at all)
+    * code indented by 2+ spaces
+    * bare URLs become links automatically
+- Title limit is 80 characters. Convention: start with "Show HN:".
+- Read https://news.ycombinator.com/showhn.html once before posting.
+- Best posting time: a weekday, 14:00–16:00 German time
+  (morning on the US East Coast).
+
+----------------------------------------------------------------
+TITLE OPTIONS (pick one)
+----------------------------------------------------------------
+
+1. Show HN: Kata Shell – a native macOS file manager with a real
+   built-in terminal
+
+2. Show HN: A macOS file manager for Windows switchers, in Swift,
+   no Electron
+
+3. Show HN: I missed my Windows file manager on the Mac, so I
+   built a native one
+
+----------------------------------------------------------------
+FIRST COMMENT (paste as-is, adjust the bracketed bits)
+----------------------------------------------------------------
+
+Hi HN. I've been writing software for about thirty years, most of
+it on Windows (C#/.NET, before that C++, some embedded). Two years
+ago I moved to a Mac and liked almost everything about it — except
+that no file manager worked the way my hands expected: a directory
+tree on the left, a details view with permissions and dates,
+function keys that do things, and a terminal one keystroke away.
+
+So I built one. Kata Shell is a native macOS app: Swift 6, AppKit
+plus SwiftUI, no Electron and no web views anywhere. The directory
+tree is an NSOutlineView, the file list is an NSTableView, the
+terminal is SwiftTerm running a real local shell session that
+follows the folder you're browsing (it tracks your cd via OSC 7,
+and ignores it when the shell is remote, so an SSH session can't
+spoof the path). Markdown preview renders as native SwiftUI views
+via MarkdownUI.
+
+A couple of things that might be interesting technically:
+
+The first version was actually .NET MAUI Blazor Hybrid, because
+that's my home stack. It reached feature parity and then I threw
+it away: the WebKit/Mac Catalyst bridge produced a steady stream
+of quirks that cost more to work around than a rewrite. The Swift
+version is faster, smaller, and has had far fewer surprises.
+
+It's not in the Mac App Store, deliberately. MAS requires the App
+Sandbox, and a sandboxed file manager can't browse your disk
+without per-folder grants — and a sandboxed embedded shell
+inherits the sandbox, which makes it mostly decorative. So it's
+Developer ID signed and notarized instead, distributed as a DMG.
+
+No analytics, no telemetry; the only network call is the Sparkle
+update check, which you can turn off.
+
+It's free during early access; 1.0 will be a one-time 29 EUR
+license (a year of updates, the version you have is yours
+forever — no subscription). Early-access users get a 1.0 license
+free.
+
+I'm the target audience for this tool, which means I'm also blind
+to what other people need first. If you came to the Mac from
+Windows — or if you didn't and this still looks useful — I'd
+honestly like to hear what's missing or broken.
+
+[URL of the product page]
+
+----------------------------------------------------------------
+NOTES
+----------------------------------------------------------------
+
+- Angle differs from the landing page on purpose: HN's audience
+  asks "what's under the hood / why not Finder", so tech and the
+  terminal lead. The landing page keeps the "feels like home
+  first" arc for Windows switchers.
+- Stay in the thread for 3–4 hours after posting and answer
+  everything, including hostile comments, in the same honest tone
+  as the comment above. HN rewards that more than the product
+  itself.
+- Do not ask friends to upvote — HN detects voting rings and
+  buries the post.
