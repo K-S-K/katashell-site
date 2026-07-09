@@ -1,74 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Imprint — Kata Shell</title>
-<meta name="robots" content="noindex">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --paper: #f6f7f8; --ink: #1c1e21; --muted: #5b6069;
-    --line: #dde0e4; --accent: #1e66d0;
-    --display: "Schibsted Grotesk", -apple-system, sans-serif;
-    --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
-    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body { font-family: var(--body); background: var(--paper); color: var(--ink); line-height: 1.65; font-size: 17px; -webkit-font-smoothing: antialiased; }
-  a { color: var(--accent); text-decoration: none; }
-  a:hover { text-decoration: underline; }
-  .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
-  .topbar { padding: 22px 0 0; }
-  .brand { font-family: var(--display); font-weight: 800; font-size: 19px; color: var(--ink); }
-  .brand:hover { text-decoration: none; }
-  main { padding: 44px 0 80px; }
-  .eyebrow { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--accent); margin-bottom: 14px; }
-  .eyebrow::before { content: "~/"; color: var(--muted); font-weight: 400; }
-  h1 { font-family: var(--display); font-weight: 700; font-size: clamp(28px, 4vw, 36px); letter-spacing: -0.02em; margin-bottom: 8px; }
-  .de { color: var(--muted); font-size: 15px; margin-bottom: 28px; }
-  h2 { font-family: var(--display); font-weight: 700; font-size: 19px; margin: 30px 0 8px; }
-  p { max-width: 62ch; }
-  p + p { margin-top: 10px; }
-  address { font-style: normal; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imprint — Kata Shell</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@500;700;800&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #f6f7f8;
+      --ink: #1c1e21;
+      --muted: #5b6069;
+      --line: #dde0e4;
+      --accent: #1e66d0;
+      --display: "Schibsted Grotesk", -apple-system, sans-serif;
+      --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--body);
+      background: var(--paper);
+      color: var(--ink);
+      line-height: 1.65;
+      font-size: 17px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .topbar {
+      padding: 22px 0 0;
+    }
+
+    .brand {
+      font-family: var(--display);
+      font-weight: 800;
+      font-size: 19px;
+      color: var(--ink);
+    }
+
+    .brand:hover {
+      text-decoration: none;
+    }
+
+    main {
+      padding: 44px 0 80px;
+    }
+
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 14px;
+    }
+
+    .eyebrow::before {
+      content: "~/";
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    h1 {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(28px, 4vw, 36px);
+      letter-spacing: -0.02em;
+      margin-bottom: 8px;
+    }
+
+    .de {
+      color: var(--muted);
+      font-size: 15px;
+      margin-bottom: 28px;
+    }
+
+    h2 {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: 19px;
+      margin: 30px 0 8px;
+    }
+
+    p {
+      max-width: 62ch;
+    }
+
+    p+p {
+      margin-top: 10px;
+    }
+
+    address {
+      font-style: normal;
+    }
+  </style>
 </head>
+
 <body>
-<header class="topbar"><div class="wrap"><a class="brand" href="/">Kata Shell</a></div></header>
-<main>
-  <div class="wrap">
-    <p class="eyebrow">imprint</p>
-    <h1>Imprint</h1>
-    <p class="de">Impressum — Angaben gemäß §&nbsp;5&nbsp;DDG</p>
+  <header class="topbar">
+    <div class="wrap"><a class="brand" href="/">Kata Shell</a></div>
+  </header>
+  <main>
+    <div class="wrap">
+      <p class="eyebrow">imprint</p>
+      <h1>Imprint</h1>
+      <p class="de">Impressum — Angaben gemäß §&nbsp;5&nbsp;DDG</p>
 
-    <h2>Provider / Diensteanbieter</h2>
-    <address>
-      <p>
-        <!-- TODO: your full legal name and postal address (no P.O. box) -->
-        Stanislav Kiselevskii<br>
-        Alte Ziegelei, 4<br>
-        67346 Speyer<br>
-        Germany
-      </p>
-    </address>
+      <h2>Provider / Diensteanbieter</h2>
+      <address>
+        <p>
+          <!-- TODO: your full legal name and postal address (no P.O. box) -->
+          Stanislav Kiselevskii<br>
+          Alte Ziegelei, 4<br>
+          67346 Speyer<br>
+          Germany
+        </p>
+      </address>
 
-    <h2>Contact / Kontakt</h2>
-    <p>E-mail: <a href="mailto:hello@katashell.app">hello@katashell.app</a></p>
+      <h2>Contact / Kontakt</h2>
+      <p>E-mail: <a href="mailto:hello@katashell.app">hello@katashell.app</a></p>
 
-    <h2>Responsible for content / Verantwortlich für den Inhalt</h2>
-    <p>Stanislav Kiselevskii, address as above / Anschrift wie oben.</p>
+      <h2>Responsible for content / Verantwortlich für den Inhalt</h2>
+      <p>Stanislav Kiselevskii, address as above / Anschrift wie oben.</p>
 
-    <!-- TODO: uncomment when a VAT ID exists
+      <!-- TODO: uncomment when a VAT ID exists
     <h2>VAT ID / Umsatzsteuer-ID</h2>
     <p>Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE000000000</p>
     -->
 
-    <h2>EU dispute resolution / EU-Streitschlichtung</h2>
-    <p>The European Commission provides a platform for online dispute resolution (ODR): <a href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. I am neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration board. / Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle bin ich nicht verpflichtet und nicht bereit.</p>
-  </div>
-</main>
+      <h2>EU dispute resolution / EU-Streitschlichtung</h2>
+      <p>The European Commission provides a platform for online dispute resolution (ODR): <a
+          href="https://ec.europa.eu/consumers/odr/" rel="noopener">https://ec.europa.eu/consumers/odr/</a>. I am
+        neither willing nor obliged to participate in dispute resolution proceedings before a consumer arbitration
+        board. / Zur Teilnahme an einem Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle bin ich nicht
+        verpflichtet und nicht bereit.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <nav>
+        <a href="/">Kata Shell</a>
+        <!-- <a href="/docs/">Docs</a> -->
+        <!-- <a href="/changelog/">Changelog</a> -->
+        <!-- <a href="mailto:hello@katashell.app">Contact</a> -->
+        <a href="/imprint/">Contact/Imprint</a>
+        <a href="/privacy/">Privacy</a>
+      </nav>
+      <!-- <p class="colophon">Kata Shell is a კატა product</p> -->
+      <p class="colophon">© 2026 Stanislav Kiselevskii</p>
+    </div>
+  </footer>
+
 </body>
+
 </html>
