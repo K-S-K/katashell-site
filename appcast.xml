@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Kata Shell Changelog</title>
+        <link>https://katashell.app/appcast.xml</link>
+        <description>Most recent changes to Kata Shell, with links to downloads.</description>
+        <language>en</language>
+        <item>
+            <title>Kata Shell 0.9.1</title>
+            <link>https://katashell.app</link>
+            <sparkle:version>0.9.1</sparkle:version>
+            <sparkle:shortVersionString>0.9.1</sparkle:shortVersionString>
+            <pubDate>Sat, 11 Jul 2026 15:39:25 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<pre>
+- Added automatic updates: Kata Shell now checks for new versions and updates itself (Sparkle 2).</pre>]]></description>
+            <enclosure url="https://github.com/K-S-K/katashell-site/releases/download/v0.9.1/KataShell-0.9.1.dmg" length="3805438" type="application/octet-stream" sparkle:edSignature="xMTadWKAX7v7PTxW42lTVrL+2EbbwVpPAiwBHHfBCk0wCsVGpdHEAKebybFimzosXmqLc5irR3nsmCJIrw9gDA==" />
+        </item>
+    </channel>
+</rss>
