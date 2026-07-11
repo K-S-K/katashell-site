@@ -226,6 +226,13 @@
             deliberate trade-off.</p>
         </details>
 
+        <details>
+          <summary>How do I uninstall Kata Shell?</summary>
+          <p>Drag it from your Applications folder to the Trash — that's the whole procedure. If you're coming from Windows: there is no uninstaller because there's nothing for it to do. Kata Shell arrives as a single self-contained app, doesn't run an installer, and doesn't scatter files across your system. The only things left behind are your own settings (so they survive if you reinstall later) and any folder-access permissions you granted. If you want those gone too, run these two commands in Terminal:</p>
+          <pre><code>defaults delete app.katashell.KataShell</code></pre>
+          <pre><code>tccutil reset All app.katashell.KataShell</code></pre>
+        </details>
+
         <!-- <details>
         <summary>Why "Kata"?</summary>
         <p>Years ago I met a yellow cat. She was cheerful and kind. She loved
