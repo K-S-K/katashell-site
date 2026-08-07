@@ -6,6 +6,54 @@
         <description>Most recent changes to Kata Shell, with links to downloads.</description>
         <language>en</language>
         <item>
+            <title>Kata Shell 0.9.3</title>
+            <link>https://katashell.app</link>
+            <sparkle:version>0.9.3</sparkle:version>
+            <sparkle:shortVersionString>0.9.3</sparkle:shortVersionString>
+            <pubDate>Fri, 07 Aug 2026 17:14:49 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<pre>
+- License tool adjustment
+- Full Disk Access
+- License Cross-Verification Tests
+- Ribbon Overflow Chevron
+- Tree Selection Invariant
+- Zoom Refactoring
+- Context Menu Items Order
+- Content view header auto-fit
+- Editor Content Guards
+- Activation core
+- User associations
+- Fix Address Bar Cancel Edit
+- Terminal - Fix and Improve
+- Update Documentation
+- Add a confirmation on object move
+- Preview Mode Splitter
+- Proper Local Build and Debug Signing
+- Make Object Rename In-place and File-related Buttons context
+- Add F8 Key for Content object delete
+- Documentation of Planning session
+- Mountable Volumes
+- Fix Mounted Resources and /Volumes Collision
+- Fix Editor Tab Switch Stale Content
+- Permission handling verification
+- Anchor tab invariant
+- Viewer/Editor F3/F4 exit semantics
+- Unsaved changes on quit and window close
+- Tree Actualization
+- Volumes Deduplication
+- Fix: Closing a terminal tab does not terminate its shell
+- Fix: Network Volumes Performance
+- Fix: Favorites Path Sync
+- Deactivate the navigation in the context of document editing
+- Add Statistics
+- Show License Info at Status bar right zone
+- Add a Custom About Window
+- Three-Tier Licensing
+- Improved License processing UX</pre>]]></description>
+            <enclosure url="https://github.com/K-S-K/katashell-site/releases/download/v0.9.3/KataShell-0.9.3.dmg" length="4369282" type="application/octet-stream" sparkle:edSignature="EcSGWiKfuNJogcwT93SclOy6kuP9IO1KVB/FEBG744s41xx59jdzRuoKaa+K3iOQyFFKalTUoePax+Rqgc8jDg==" />
+        </item>
+        <item>
             <title>Kata Shell 0.9.1</title>
             <link>https://katashell.app</link>
             <sparkle:version>0.9.1</sparkle:version>

@@ -44,13 +44,19 @@
         <p class="subline">Native macOS app — Swift and AppKit. No Electron, no web views.</p>
 
         <div class="cta">
-          <!-- TODO: point to the real DMG (GitHub Releases URL) -->
-          <!-- <a class="btn" href="#download">Download for macOS</a> -->
-          <p class="tagline">Download button coming soon...</p>
+          <!-- Reference to the real DMG (GitHub Releases URL) -->
+          <a class="btn" href="#download">Download for macOS</a>
+          <!-- Stub for downloading button hiding -->
+          <!-- <p class="tagline">Download button coming soon...</p> -->
           <span class="meta-line">
             <!-- TODO: real version + minimum macOS -->
             v0.9 · free during early access · macOS 14+ · Apple Silicon
-            <!-- · <a href="/changelog/">changelog</a> -->
+            <!-- Points at GitHub Releases, not a local /changelog/ page, on purpose: release.sh
+                 already publishes each version's CHANGELOG.md section there as release notes, so
+                 this is the one copy of the changelog that can't go stale. Revisit once the real
+                 site replaces this stub — a native /changelog/ page can pull the same GitHub
+                 Releases API instead of hosting a second copy of the same text. -->
+            · <a href="https://github.com/K-S-K/katashell-site/releases">changelog</a>
           </span>
         </div>
 
@@ -255,7 +261,7 @@
       <nav>
         <a href="/">Kata Shell</a>
         <!-- <a href="/docs/">Docs</a> -->
-        <!-- <a href="/changelog/">Changelog</a> -->
+        <a href="https://github.com/K-S-K/katashell-site/releases">Changelog</a>
         <!-- <a href="mailto:hello@katashell.app">Contact</a> -->
         <a href="/imprint/">Contact/Imprint</a>
         <a href="/privacy/">Privacy</a>
