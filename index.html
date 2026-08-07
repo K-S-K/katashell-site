@@ -44,8 +44,16 @@
         <p class="subline">Native macOS app — Swift and AppKit. No Electron, no web views.</p>
 
         <div class="cta">
-          <!-- Reference to the real DMG (GitHub Releases URL) -->
-          <a class="btn" href="#download">Download for macOS</a>
+          <!-- /releases/latest/download/<asset> resolves against whatever the newest release is,
+               so this URL never needs touching per release. It works ONLY because
+               Tools/Release/release.sh (step 5b, in the Kata-Shell repo) uploads a stable-named
+               KataShell.dmg copy alongside the versioned KataShell-<version>.dmg on every release
+               — do not "tidy" that copy away, and do not point this at the versioned filename,
+               which would 404 the moment the next version ships. -->
+          <a class="btn"
+             href="https://github.com/K-S-K/katashell-site/releases/latest/download/KataShell.dmg">
+            Download for macOS
+          </a>
           <!-- Stub for downloading button hiding -->
           <!-- <p class="tagline">Download button coming soon...</p> -->
           <span class="meta-line">
