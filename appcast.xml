@@ -6,6 +6,19 @@
         <description>Most recent changes to Kata Shell, with links to downloads.</description>
         <language>en</language>
         <item>
+            <title>Kata Shell 0.9.4</title>
+            <link>https://katashell.app</link>
+            <sparkle:version>0.9.4</sparkle:version>
+            <sparkle:shortVersionString>0.9.4</sparkle:shortVersionString>
+            <pubDate>Mon, 17 Aug 2026 18:54:48 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<pre>
+- Content Loading Indication
+- License Request UX Improvement
+- Project Documentation Restructure</pre>]]></description>
+            <enclosure url="https://github.com/K-S-K/katashell-site/releases/download/v0.9.4/KataShell-0.9.4.dmg" length="4388998" type="application/octet-stream" sparkle:edSignature="pOtgpZ1T6ZypUpdP97uSCi9f6WJIHhz+cOZmZpGcQLoY90UASXJLj3Xzw+xFqNHmW8TrPGRBfLoFiBK1I7P0BA==" />
+        </item>
+        <item>
             <title>Kata Shell 0.9.3</title>
             <link>https://katashell.app</link>
             <sparkle:version>0.9.3</sparkle:version>
