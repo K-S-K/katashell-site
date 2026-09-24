@@ -6,6 +6,22 @@
         <description>Most recent changes to Kata Shell, with links to downloads.</description>
         <language>en</language>
         <item>
+            <title>Kata Shell 0.9.5</title>
+            <link>https://katashell.app</link>
+            <sparkle:version>0.9.5</sparkle:version>
+            <sparkle:shortVersionString>0.9.5</sparkle:shortVersionString>
+            <pubDate>Thu, 24 Sep 2026 21:17:43 +0000</pubDate>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<pre>
+- Folder-Labels-Adjustment
+- Markdown Preview Font Fix
+- Sort Items by Column in the Table View
+- MD Images: Show Images in MD files preview
+- Urls in MD View: Hover Cursor and Status Bar
+- ICS (The Internet Calendaring and Scheduling Core Object Specification) File Format Support for Preview and Edit</pre>]]></description>
+            <enclosure url="https://github.com/K-S-K/katashell-site/releases/download/v0.9.5/KataShell-0.9.5.dmg" length="4910086" type="application/octet-stream" sparkle:edSignature="iZNPnd1AI+8duBxoe5fON515h9IfWdIvZNk16IPdL0Y38btHh2ezoNIgMSiut4CJ2fHJVf25VvUuQYaQSWNjBg==" />
+        </item>
+        <item>
             <title>Kata Shell 0.9.4</title>
             <link>https://katashell.app</link>
             <sparkle:version>0.9.4</sparkle:version>
